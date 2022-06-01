@@ -13,7 +13,7 @@ jobs:
   # fetching code from the repo
   Fetch-Code:
     docker:
-     - image: comg/base:2021.04  
+     - image: cimg/base:2021.04  
     steps:
      - checkout 
      - run:
