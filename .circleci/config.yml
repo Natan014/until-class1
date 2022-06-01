@@ -50,5 +50,5 @@ workflows:
           requires:
             - Fetch-Code
       - Now-Complete:
-        requires: 
-          - Hold-for-Approval
+          requires: 
+            - Hold-for-Approval
