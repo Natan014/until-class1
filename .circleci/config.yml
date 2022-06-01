@@ -30,6 +30,15 @@ jobs:
         name: Running the Node Container
         command: |
           node -v
+  Now-Complete:
+    docker:
+      - image: alpine:3.15
+    steps:
+      - run:
+          name: Approval Complete
+          command: | 
+          echo ' The work is now complete'
+
 workflows:
   Example-Workflow:
     jobs:
@@ -40,4 +49,6 @@ workflows:
       - Using-Node:
           requires:
             - Fetch-Code
-
+      - Now-Complete:
+        requires: 
+          - Hold-for-Approval
