@@ -15,7 +15,7 @@ jobs:
     docker:
      - image: comg/base:2021.04  
     steps:
-    - checkout 
+     - checkout 
      - run:
         name: Getting the code
         command: |
