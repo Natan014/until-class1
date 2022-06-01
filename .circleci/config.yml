@@ -12,7 +12,7 @@ jobs:
      - run:
         name: The Second Step
         Command: |
-            ls -al
-            echo '^^^The files in your repo^^^'  
+          ls -al
+          echo '^^^The files in your repo^^^'  
 
 
