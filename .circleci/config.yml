@@ -11,7 +11,7 @@ jobs:
           echo 'Hello World!'
           echo 'This is the delivery pipeline'
   # fetching code from the repo
-  Ferch-Code:
+  Fetch-Code:
     docker:
      - image: comg/base:2021.04  
     steps:
